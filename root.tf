@@ -11,9 +11,7 @@ module "test" {
 
 }
 
-#this is weebhook for github
 
-# testing this to check weebhook is triggered or not
 terraform {
 
   backend "s3" {
@@ -21,9 +19,9 @@ terraform {
     key            = "harsha/terraform.tfstate "
     region         = "ap-south-1"
     dynamodb_table = "terraform-state-lock-dynamo" # DynamoDB table for state locking
-    # Enable server-side encryption
+    
   }
 }
 
 
-#this is trigger
+
