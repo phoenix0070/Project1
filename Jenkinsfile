@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('GIT CHECKOUT') {
             steps {
-                // Specify the branch name explicitly (e.g., 'main' or 'master'please check this is for test)
+                // Specify the branch name explicitly (e.g., 'main' or 'master')
                 git branch: 'main', url: 'https://github.com/phoenix0070/Project1.git'
             }
         }
